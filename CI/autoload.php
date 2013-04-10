@@ -1,0 +1,1 @@
+$autoload['helper'] = array('vxodump');
