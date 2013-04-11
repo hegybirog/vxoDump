@@ -1,4 +1,5 @@
-<?
+<?php 
+
 /**
  * Class vxoDump
  */
@@ -14,10 +15,10 @@ class vxoDump
         ?>
         <pre class="debug_pre" id='debug_win'><a id='debug_close' href='javascript:<?=$js?> void(0);'>close</a><?=$name != '' ? "<br>$name : " : ''; echo vxoDump::_get_info_var ($var, $name);?>
         <style>
-            #debug_close:hover          {text-decoration: underline;}
-            #debug_close                {background: #db147b;padding:10px;color:#FFF;float: right;margin:10px;text-decoration: none;text-transform: uppercase;}
             .debug_pre                  {background-color: whitesmoke; padding: 8px 8px 8px 8px; border: 1px solid black; text-align: left; font-family: monospace; font-size: 100%;left:5%;width:89%;top:5%;position:absolute;}
             .debug_more                 {color:#FF5555;font-weight:bold;}
+            #debug_close                {background: #db147b;padding:10px;color:#FFF;float: right;margin:10px;text-decoration: none;text-transform: uppercase;}
+            #debug_close:hover          {text-decoration: underline;}
             .debug_more_ct_closed       {display: none;}
             .debug_more:hover           {text-decoration: none;}
             .debug_more:hover .debug_more_ct_closed {color:#a0a0a0;display: block;padding:20px;border:10px solid #d0d0d0;}
